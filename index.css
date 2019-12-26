@@ -502,6 +502,10 @@ li:hover{
 		font-size: 30px;
 		text-align: center;
 	}
+	.header_content{
+	margin-left: 50px;
+    margin-right: 50px;
+	}
 	h1{
 		font-size:100px;
 	}
@@ -514,42 +518,51 @@ li:hover{
 		width:50vw;
 	}
 	.build{
-		height:1800px;
+		height:120vh;
+		width: 100%;
 	}
 	.catalog{
-	margin-left:15vw;
-	margin-right:15vw;
+	margin-left:0vw;
+	margin-right:0vw;
 	margin-top:0; 
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
 	}
 	.block_content{
-		width: 50%;
-		height: 10%;
+		width: 400px;
+		height: 200px;
 		margin: 5px;
 		
 	}
-
+	
+	
 	.house{
-		width: 100%;
-		height: 100%;
+		width: 400px;
+		height: 200px;
 	}
 	p{  	 
 	 font-size: 30px;
 	}
 	.about_block{
-	margin: 20px;	
+	margin: 20px;
+	font-size: 30px;	
 	}
 	.about_content{
 	font-size: 45px;	
 	flex-wrap: wrap;
 	}
 	.about_icon{
-		width: 150px;
-		height: 150px;
+		width: 100px;
+		height: 100px;
+
 	}
 	.about_img{
 		margin: 0;
 		padding: 0;
-		height: 600px;
+		height: 400px;
 		width: 100%;
 	}
 	.about_text_content{
@@ -591,11 +604,116 @@ li:hover{
 		font-size: 18px;
 
 	}
+	.news_block{
+		padding: 30px;
+	}
+	.news_block:hover{
+		border: none;
+	}
+	footer{
+		padding: 0px;
+	}
 }
+@media screen and (max-width: 836px){
+	.build{
+		height:210vh;
+		width: 100%;
 
+}
+.letter{
+	width: 200px;
+}
+.email{
+	width: 340px;
+}
+.clients{
+	padding-left: 20px;
+    padding-right: 20px;
+    width:100%;
+}
+}
+@media screen and (max-width: 530px){
+	h1{
+		font-size: 50px;
+	}
+	.header_little_text {
+    font-size: 20px;
+}
+.order_now {
+    font-size: 40px;
+    height: 80px;
+    width: 70vw;
+    margin-top: 30%;
+}
+.contact_title {
+    font-size: 14px;
+ }
+ h5 {
+    font-size: 20px;
+}
+li{
+	font-size: 15px;
+}
+}
+@media screen and (max-width: 430px){
+	.header_content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.build{
+	height: 230vh;
+}
+	.order_now{
+		font-size: 30px;
+	}
+	.house{
+		width: 250px;
+		height: 150px;
+	}
+	.block_content{
+		width: 250px;
+		height: 150px;
+	}
+	.block_content:hover p{
+	opacity: 0;
 
-
-
+}
+.block_content:hover .house{
+	opacity:1;
+}
+.block_content > p{
+	display: none;
+}
+	.news_img {
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+}
+.news_block {
+    padding: 0;
+    font-size: 14px;
+}
+.news_img{
+	width: 250px;
+	height: 150px;
+}
+.letter{
+	font-size: 10px;
+	width: 150px;
+}
+ul{
+	padding: 5px;
+}
+footer{
+	height: 100vh;
+}
+.about_text_content{
+	font-size: 15px;
+	margin-right: 0;
+}
+.email{
+	width: 200px;
+}
 
 
 

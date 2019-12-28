@@ -96,7 +96,7 @@ section{
 	padding-bottom:50px;
 }
 .catalog{
-	position: absolute;
+	position: static;
 	margin-left:25vw;
 	margin-right:25vw;
 	margin-top:3%; 
